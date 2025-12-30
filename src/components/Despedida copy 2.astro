@@ -62,18 +62,18 @@
             </p>
 
               <!-- BOTÓN CONFIRMAR ASISTENCIA CON WHATSAPP  PADRE-->
-            <div class="flex justify-center w-full max-w-sm mx-auto" id="boton-confirmar-padre">
+            <div class="flex justify-center" id="boton-confirmar">
               <a
                 href="https://wa.link/7y5kvn"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-3 w-full px-4 py-3 md:px-6 md:py-4 bg-[#eb8fa3] rounded-lg shadow-md hover:shadow-lg hover:bg-[#d97d91] transition-all duration-300"
+                class="inline-flex items-center justify-center gap-3 px-2 py-3 md:px-10 md:py-4 bg-[#eb8fa3] rounded-lg shadow-md hover:shadow-lg hover:bg-[#d97d91] transition-all duration-300"
                 aria-label="Confirmar asistencia por WhatsApp"
                 title="Confirmar asistencia por WhatsApp"
               >
                 <!-- Icono de WhatsApp -->
                 <svg 
-                  class="w-6 h-6 md:w-7 md:h-7 text-white flex-shrink-0" 
+                  class="w-6 h-6 md:w-7 md:h-7 text-white" 
                   fill="currentColor" 
                   viewBox="0 0 24 24"
                 >
@@ -81,25 +81,25 @@
                 </svg>
 
                 <!-- Texto -->
-                <span class="font-charm text-base md:text-lg text-white font-semibold">
+                <span class="font-charm text-sm md:text-xl text-white font-semibold">
                   Confirmar con el Padre
                 </span>
               </a>
             </div>
 
             <!-- BOTÓN CONFIRMAR ASISTENCIA CON WHATSAPP  MADRE-->
-            <div class="flex pt-10 justify-center w-full max-w-sm mx-auto" id="boton-confirmar-madre">
+            <div class="flex pt-10 justify-center" id="boton-confirmar">
               <a
                 href="https://wa.link/fueo79"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-3 w-full px-4 py-3 md:px-6 md:py-4 bg-[#eb8fa3] rounded-lg shadow-md hover:shadow-lg hover:bg-[#d97d91] transition-all duration-300"
+                class="inline-flex items-center justify-center gap-3 px-2 py-3 md:px-10 md:py-4 bg-[#eb8fa3] rounded-lg shadow-md hover:shadow-lg hover:bg-[#d97d91] transition-all duration-300"
                 aria-label="Confirmar asistencia por WhatsApp"
                 title="Confirmar asistencia por WhatsApp"
               >
                 <!-- Icono de WhatsApp -->
                 <svg 
-                  class="w-6 h-6 md:w-7 md:h-7 text-white flex-shrink-0" 
+                  class="w-6 h-6 md:w-7 md:h-7 text-white" 
                   fill="currentColor" 
                   viewBox="0 0 24 24"
                 >
@@ -107,7 +107,7 @@
                 </svg>
 
                 <!-- Texto -->
-                <span class="font-charm text-base md:text-lg text-white font-semibold">
+                <span class="font-charm text-sm md:text-xl text-white font-semibold">
                   Confirmar con la Madre
                 </span>
               </a>
@@ -115,18 +115,18 @@
 
 
             <!-- BOTÓN CONFIRMAR ASISTENCIA CON WHATSAPP quinceañera-->
-            <div class="flex pt-10 justify-center w-full max-w-sm mx-auto" id="boton-confirmar-quince">
+            <div class="flex pt-10 justify-center" id="boton-confirmar">
               <a
                 href="https://wa.link/wubhp5"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-3 w-full px-4 py-3 md:px-6 md:py-4 bg-[#eb8fa3] rounded-lg shadow-md hover:shadow-lg hover:bg-[#d97d91] transition-all duration-300"
+                class="inline-flex items-center justify-center gap-3 px-2 py-3 md:px-10 md:py-4 bg-[#eb8fa3] rounded-lg shadow-md hover:shadow-lg hover:bg-[#d97d91] transition-all duration-300"
                 aria-label="Confirmar asistencia por WhatsApp"
                 title="Confirmar asistencia por WhatsApp"
               >
                 <!-- Icono de WhatsApp -->
                 <svg 
-                  class="w-6 h-6 md:w-7 md:h-7 text-white flex-shrink-0" 
+                  class="w-6 h-6 md:w-7 md:h-7 text-white" 
                   fill="currentColor" 
                   viewBox="0 0 24 24"
                 >
@@ -134,7 +134,7 @@
                 </svg>
 
                 <!-- Texto -->
-                <span class="font-charm text-base md:text-lg text-white font-semibold">
+                <span class="font-charm text-sm md:text-xl text-white font-semibold">
                   Confirmar con la Quinceañera
                 </span>
               </a>
@@ -174,9 +174,7 @@
       gsap.set("#linea-decorativa", { opacity: 0, scale: 0.5 });
       gsap.set("#texto-confirmar", { opacity: 0, y: 20 });
       gsap.set("#mensaje-confirmar", { opacity: 0, scale: 0.9, y: 20 });
-      gsap.set("#boton-confirmar-padre", { opacity: 0, y: 20 });
-      gsap.set("#boton-confirmar-madre", { opacity: 0, y: 20 });
-      gsap.set("#boton-confirmar-quince", { opacity: 0, y: 20 });
+      gsap.set("#boton-confirmar", { opacity: 0, scale: 0.8, y: 20 });
       gsap.set("#mensaje-final", { opacity: 0, scale: 0.9, y: 20 });
 
       // ✨ ANIMACIÓN SIMULTÁNEA Y ELEGANTE
@@ -228,23 +226,12 @@
             duration: 0.8,
             ease: "back.out(1.5)",
           }, 0)
-          .to("#boton-confirmar-padre", {
+          .to("#boton-confirmar", {
             opacity: 1,
+            scale: 1,
             y: 0,
             duration: 0.8,
-            ease: "power2.out",
-          }, 0)
-          .to("#boton-confirmar-madre", {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            ease: "power2.out",
-          }, 0)
-          .to("#boton-confirmar-quince", {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            ease: "power2.out",
+            ease: "back.out(1.5)",
           }, 0)
           .to("#mensaje-final", {
             opacity: 1,
@@ -254,10 +241,20 @@
             ease: "elastic.out(1, 0.5)",
           }, 0);
 
-          // 🌸 ANIMACIONES CONTINUAS (solo para corazón y mensaje final)
+          // 🌸 ANIMACIONES CONTINUAS
           gsap.to("#linea-decorativa svg", {
             scale: 1.2,
             duration: 1.5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            delay: 0.8,
+          });
+
+          gsap.to("#boton-confirmar a", {
+            scale: 1.05,
+            y: -3,
+            duration: 2,
             ease: "sine.inOut",
             yoyo: true,
             repeat: -1,
@@ -280,9 +277,7 @@
           gsap.set("#linea-decorativa", { opacity: 0, scale: 0.5 });
           gsap.set("#texto-confirmar", { opacity: 0, y: 20 });
           gsap.set("#mensaje-confirmar", { opacity: 0, scale: 0.9, y: 20 });
-          gsap.set("#boton-confirmar-padre", { opacity: 0, y: 20 });
-          gsap.set("#boton-confirmar-madre", { opacity: 0, y: 20 });
-          gsap.set("#boton-confirmar-quince", { opacity: 0, y: 20 });
+          gsap.set("#boton-confirmar", { opacity: 0, scale: 0.8, y: 20 });
           gsap.set("#mensaje-final", { opacity: 0, scale: 0.9, y: 20 });
         },
       });
